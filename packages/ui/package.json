@@ -14,7 +14,9 @@
     "build": "tailwindcss -i ./src/styles.css -o ./dist/index.css",
     "lint": "eslint src/",
     "dev": "tailwindcss -i ./src/styles.css -o ./dist/index.css --watch",
-    "type-check": "tsc --noEmit"
+    "type-check": "tsc --noEmit",
+    "format:write": "prettier --write .",
+    "format:check": "prettier --check ."
   },
   "peerDependencies": {
     "react": "^18.2.0"

@@ -14,6 +14,7 @@
     "dev": "turbo dev",
     "dev:frontend": "turbo dev --filter=frontend",
     "dev:ui": "turbo dev --filter=@open-convo/ui",
+    "dev:backend": "turbo dev --filter=backend",
     "lint": "turbo lint",
     "type-check": "turbo type-check",
     "clean": "turbo clean",
@@ -31,5 +32,8 @@
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "turbo": "^2.0.4"
+  },
+  "dependencies": {
+    "cross-env": "^7.0.3"
   }
 }
