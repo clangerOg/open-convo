@@ -12,6 +12,8 @@
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
+    "dev:frontend": "turbo dev --filter=frontend",
+    "dev:ui": "turbo dev --filter=@open-convo/ui",
     "lint": "turbo lint",
     "type-check": "turbo type-check",
     "clean": "turbo clean",
