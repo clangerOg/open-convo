@@ -7,9 +7,11 @@
     "lint": "turbo lint",
     "type-check": "turbo type-check",
     "clean": "turbo clean",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format:write": "turbo run format:write",
+    "format:check": "turbo run format:check"
   },
   "devDependencies": {
+    "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
     "@open-convo/typescript-config": "workspace:*",
     "eslint": "^8.57.0",
     "prettier": "^3.2.5",
