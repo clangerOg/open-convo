@@ -1,23 +1,33 @@
 {
+  "name": "open-convo",
   "private": true,
+  "packageManager": "pnpm@8.15.6",
+  "engineStrict": true,
+  "engines": {
+    "node": ">=18",
+    "npm": "please-use-pnpm",
+    "yarn": "please-use-pnpm",
+    "pnpm": ">=6"
+  },
   "scripts": {
     "build": "turbo build",
     "dev": "turbo dev",
     "lint": "turbo lint",
     "type-check": "turbo type-check",
     "clean": "turbo clean",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\""
+    "format:write": "turbo run format:write",
+    "format:check": "turbo run format:check",
+    "prepare": "husky"
   },
   "devDependencies": {
-    "@repo/typescript-config": "workspace:*",
+    "@commitlint/cli": "^19.3.0",
+    "@commitlint/config-conventional": "^19.2.2",
+    "@ianvs/prettier-plugin-sort-imports": "^4.2.1",
+    "@open-convo/typescript-config": "workspace:*",
     "eslint": "^8.57.0",
+    "husky": "^9.0.11",
     "prettier": "^3.2.5",
     "prettier-plugin-tailwindcss": "^0.5.11",
     "turbo": "^2.0.4"
-  },
-  "packageManager": "pnpm@8.15.6",
-  "engines": {
-    "node": ">=18"
-  },
-  "name": "with-tailwind"
+  }
 }
