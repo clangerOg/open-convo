@@ -1,0 +1,13 @@
+{
+  "extends": "@open-convo/typescript-config/node.json",
+  "compilerOptions": {
+    "baseUrl": ".",
+    "jsx": "react",
+    "outDir": "dist"
+  },
+  "include": [".", ".eslintrc.js"],
+  "exclude": ["dist", "build"],
+  "ts-node": {
+    "swc": true
+  }
+}
