@@ -1,4 +1,5 @@
 import express from "express";
+import logger from "./logger";
 // import logger from "@example/logger";
 
 // import { test, anotherOne } from "@example/utils";
@@ -17,5 +18,6 @@ app.get("/", (req, res) => {
 const PORT = process.env.PORT || 9999;
 
 app.listen(PORT, () => {
+  logger.log("warn", `Server is running on port ${PORT}`);
   return "Server is running on port 9999";
 });

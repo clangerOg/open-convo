@@ -3,7 +3,7 @@
   "extends": ["//"],
   "tasks": {
     "build": {
-      "env": ["PORT"]
+      "env": ["PORT", "NODE_ENV"]
     }
   }
 }
