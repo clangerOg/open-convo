@@ -43,5 +43,7 @@ module.exports = {
   // add rules configurations here
   rules: {
     "import/no-default-export": "off",
+    "import/no-named-as-default-member": "off",
+    "react/jsx-sort-props": "off",
   },
 };

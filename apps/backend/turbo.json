@@ -3,7 +3,7 @@
   "extends": ["//"],
   "tasks": {
     "build": {
-      "env": ["PORT", "NODE_ENV"]
+      "env": ["PORT", "NODE_ENV", "JWT_SECRET", "SECRET_AUTH_KEY"]
     }
   }
 }

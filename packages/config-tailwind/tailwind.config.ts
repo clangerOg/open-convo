@@ -20,6 +20,7 @@ const config: Omit<Config, "content"> = {
         accent: colors.orange,
         "card-bg": colors.zinc[50],
         ring: colors.orange[500],
+        "muted-foreground": colors.zinc[500],
       },
       backgroundImage: {
         "glow-conic":
